@@ -72,5 +72,5 @@ try
 
 catch
 {
-  Console.WriteLine("Были введены некорректные данные");
+  Console.WriteLine("Были введены некорректные данные.");
 }
