@@ -16,7 +16,6 @@ void FillArray(int[,,] array)
     array1[i] = new Random().Next(10, 100);
     temp = array1[i];
     if (i >= 1)
-    {
       for (int j = 0; j < i; j++)
       {
         while (array1[i] == array1[j])
@@ -27,20 +26,15 @@ void FillArray(int[,,] array)
         }
         temp = array1[i];
       }
-    }
   }
   int count = 0;
   for (int x = 0; x < array.GetLength(0); x++)
-  {
     for (int y = 0; y < array.GetLength(1); y++)
-    {
       for (int z = 0; z < array.GetLength(2); z++)
       {
         array[x, y, z] = array1[count];
         count++;
       }
-    }
-  }
 }
 
 void PrintArray(int[,,] array)
