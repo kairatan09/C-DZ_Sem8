@@ -1,12 +1,8 @@
 ﻿// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
-// Например, задан массив:
-// 1 4 7 2
-// 5 9 2 3
-// 8 4 2 4
-// В итоге получается вот такой массив:
-// 7 4 2 1
-// 9 5 3 2
-// 8 4 4 2
+// Например, задан массив:            В итоге получается вот такой массив:
+// 1 4 7 2                            7 4 2 1
+// 5 9 2 3                            9 5 3 2
+// 8 4 2 4                            8 4 4 2
 
 void FillArray(int[,] array)
 {
@@ -43,12 +39,13 @@ int[,] SortArray(int[,] array)
 
 try
 {
-  Console.WriteLine("Введите количество строк");
+  Console.Write("Введите количество строк:\t");
   int rows = Convert.ToInt32(Console.ReadLine());
-  Console.WriteLine("Введите количество столбцов");
+  Console.Write("Введите количество столбцов:\t");
   int cols = Convert.ToInt32(Console.ReadLine());
   int[,] array = new int[rows, cols];
   FillArray(array);
+  Console.WriteLine();
   PrintArray(array);
   Console.WriteLine();
   PrintArray(SortArray(array));

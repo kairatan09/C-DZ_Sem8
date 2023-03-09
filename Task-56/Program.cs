@@ -37,12 +37,13 @@ void MinSumRowElement(int[,] array)
 
 try
 {
-  Console.WriteLine("Введите количество строк");
+  Console.Write("Введите количество строк:\t");
   int rows = Convert.ToInt32(Console.ReadLine());
-  Console.WriteLine("Введите количество столбцов");
+  Console.Write("Введите количество столбцов:\t");
   int cols = Convert.ToInt32(Console.ReadLine());
   int[,] array = new int[rows, cols];
   FillArray(array);
+  Console.WriteLine();
   PrintArray(array);
   MinSumRowElement(array);
 }
