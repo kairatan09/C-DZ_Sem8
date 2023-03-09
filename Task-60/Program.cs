@@ -24,7 +24,6 @@ void FillArray(int[,,] array)
           j = 0;
           temp = array1[i];
         }
-        temp = array1[i];
       }
   }
   int count = 0;
